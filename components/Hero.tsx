@@ -10,13 +10,16 @@ const orbitron = Orbitron({
 const Hero = () => {
   return (
     <div
-      className={`${orbitron.className}min-h-screen flex flex-col md:flex-row justify-center items-center bg-hero-bg  text-white text-center px-6 py-8  `}
+      className={`min-h-screen flex flex-col md:flex-row justify-center items-center bg-hero-bg  text-white text-center px-6 py-8  `}
     >
       {/* bg-gradient-to-r from-pink-600 to-black  */}
       {/* Text Section */}
       <section className="mb-8 md:mb-0 md:max-w-xl text-center md:text-left">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-          Welcome to Xyenux
+          Welcome to{" "}
+          <span className={`${orbitron.className} text-4xl md:text-5xl`}>
+            Xyenux
+          </span>
         </h1>
 
         <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto md:mx-0">

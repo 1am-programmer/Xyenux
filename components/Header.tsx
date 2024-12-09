@@ -16,19 +16,25 @@ const navLinks = [
   },
   {
     name: "About",
-    href: "/about",
+    href: "#about",
     style:
       "text-white font-semibold hover:text-gray-300 transition duration-300",
   },
   {
-    name: "Features",
-    href: "/features",
+    name: "NFTs",
+    href: "/nfts",
     style:
       "text-white font-semibold hover:text-gray-300 transition duration-300",
   },
   {
-    name: "Contact",
-    href: "/contact",
+    name: "Stake",
+    href: "/stake",
+    style:
+      "text-white font-semibold hover:text-gray-300 transition duration-300",
+  },
+  {
+    name: "Swap",
+    href: "/swap",
     style:
       "text-white font-semibold hover:text-gray-300 transition duration-300",
   },
