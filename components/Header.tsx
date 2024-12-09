@@ -16,7 +16,7 @@ const navLinks = [
   },
   {
     name: "About",
-    href: "#about",
+    href: "/#about",
     style:
       "text-white font-semibold hover:text-gray-300 transition duration-300",
   },
@@ -42,7 +42,7 @@ const navLinks = [
 
 const Header = () => {
   return (
-    <div className="flex justify-between gap-3 items-center">
+    <div className="flex justify-between gap-3 items-center px-5">
       <h1 className={`${orbitron.className} text-2xl`}>Xyenux</h1>
 
       <section>

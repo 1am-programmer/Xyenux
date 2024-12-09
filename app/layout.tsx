@@ -1,7 +1,9 @@
-import type { Metadata } from "next";
+// app/layout.tsx or app/RootLayout.tsx (depending on your setup)
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/components/Header";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,8 +28,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} `}>
-        {children}
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} bg-web3-gradient text-gray-300 px-4 py-8 max-w-7xl mx-auto`}
+        //  flex flex-col justify-center  gap-16
+      >
+        {/* Include the Header */}
+        <Header />
+
+        {/* Main content goes here */}
+        <main className="px-4 py-8 max-w-7xl mx-auto flex flex-col justify-center gap-16 min-h-screen">
+          {children}
+        </main>
+
+        {/* Include the Footer */}
+        <Footer />
       </body>
     </html>
   );
