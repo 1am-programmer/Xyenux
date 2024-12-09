@@ -10,7 +10,7 @@ const orbitron = Orbitron({
 const Hero = () => {
   return (
     <div
-      className={`min-h-screen flex flex-col md:flex-row justify-center items-center bg-hero-bg  text-white text-center px-6 py-8  `}
+      className={`${orbitron.className}min-h-screen flex flex-col md:flex-row justify-center items-center bg-hero-bg  text-white text-center px-6 py-8  `}
     >
       {/* bg-gradient-to-r from-pink-600 to-black  */}
       {/* Text Section */}
