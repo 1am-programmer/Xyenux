@@ -50,7 +50,9 @@ const Header = () => {
       </section>
       <Link
         href="/"
-        className="bg-gradient-to-r from-black to-red-600 text-white px-8 py-3 rounded-xl font-bold text-[1rem] hover:from-red-600 hover:to-black transition-all duration-300"
+        className="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl text-base sm:text-lg font-bold hover:from-pink-700 hover:to-purple-700 transition-all duration-300"
+
+        // className="bg-gradient-to-r from-black to-red-600 text-white px-8 py-3 rounded-xl font-bold text-[1rem] hover:from-red-600 hover:to-black transition-all duration-300"
       >
         Connect Wallet
       </Link>

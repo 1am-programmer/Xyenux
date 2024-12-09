@@ -16,6 +16,7 @@ const config: Config = {
         // Use backgroundImage for gradients
         "web3-gradient":
           " linear-gradient(135deg, #000000 30%, #ff0066 50%, #9b59b6 80%)",
+        "hero-bg": 'url("/images/herosec.svg")',
       },
       borderRadius: {
         lg: "var(--radius)",
