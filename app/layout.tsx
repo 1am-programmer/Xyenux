@@ -19,6 +19,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Xyenux",
   description: "Empowering the future with decentralized Web3 technology",
+  icons: {
+    icon: "/images/logo.svg",
+  },
 };
 
 export default function RootLayout({
@@ -30,17 +33,13 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-web3-gradient text-gray-300 px-4 py-8 max-w-7xl mx-auto`}
-        //  flex flex-col justify-center  gap-16
       >
-        {/* Include the Header */}
         <Header />
 
-        {/* Main content goes here */}
         <main className="px-4 py-8 max-w-7xl mx-auto flex flex-col justify-center gap-16 min-h-screen">
           {children}
         </main>
 
-        {/* Include the Footer */}
         <Footer />
       </body>
     </html>

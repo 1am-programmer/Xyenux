@@ -1,6 +1,9 @@
 import Link from "next/link";
 import React from "react";
 import { Orbitron } from "next/font/google";
+import { FaWallet } from "react-icons/fa";
+import Image from "next/image";
+import MobileNav from "./MobileNav";
 
 const orbitron = Orbitron({
   weight: ["400", "500", "700"],
@@ -42,8 +45,20 @@ const navLinks = [
 
 const Header = () => {
   return (
-    <div className="flex justify-between gap-3 items-center px-5">
-      <h1 className={`${orbitron.className} text-2xl`}>Xyenux</h1>
+    <div className="flex justify-between items-center h-16 px-6">
+      <section className="flex items-center">
+        <Image
+          src="/images/logo.svg"
+          alt="Xyenux Logo"
+          width={50}
+          height={50}
+        />
+        <h1
+          className={`${orbitron.className} hidden text-2xl md:flex items-center ml-4`}
+        >
+          Xyenux
+        </h1>
+      </section>
 
       <section>
         <nav className="hidden md:flex gap-6">
@@ -54,14 +69,19 @@ const Header = () => {
           ))}
         </nav>
       </section>
+
       <Link
         href="/"
-        className="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl text-base sm:text-lg font-bold hover:from-pink-700 hover:to-purple-700 transition-all duration-300"
-
-        // className="bg-gradient-to-r from-black to-red-600 text-white px-8 py-3 rounded-xl font-bold text-[1rem] hover:from-red-600 hover:to-black transition-all duration-300"
+        className="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-5 py-3 rounded-xl text-sm font-bold hover:from-pink-700 hover:to-purple-700 transition-all duration-300 hidden md:flex"
       >
         Connect Wallet
       </Link>
+
+      <div className="flex gap-2 md:hidden items-center">
+        <FaWallet className="text-xl text-white" />
+
+        <MobileNav />
+      </div>
     </div>
   );
 };

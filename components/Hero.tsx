@@ -10,14 +10,15 @@ const orbitron = Orbitron({
 const Hero = () => {
   return (
     <div
-      className={`min-h-screen flex flex-col md:flex-row justify-center items-center bg-hero-bg  text-white text-center px-6 py-8  `}
+      className={`min-h-screen flex flex-col md:flex-row justify-start md:justify-start items-center bg-hero-bg  text-white text-center px-6 py-8 `}
     >
       {/* bg-gradient-to-r from-pink-600 to-black  */}
-      {/* Text Section */}
       <section className="mb-8 md:mb-0 md:max-w-xl text-center md:text-left">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">
           Welcome to{" "}
-          <span className={`${orbitron.className} text-4xl md:text-5xl`}>
+          <span
+            className={`${orbitron.className} text-4xl md:text-5xl inline-block`}
+          >
             Xyenux
           </span>
         </h1>
@@ -34,17 +35,15 @@ const Hero = () => {
           Get Started
         </Link>
       </section>
-
-      {/* Image Section */}
-      <section className="w-full md:w-auto flex justify-center md:justify-start  bg-hero-bg">
-        <Image
-          src="/images/herosec.svg"
-          alt="hero img"
-          height={400}
-          width={500}
-          className="max-w-full h-auto bg-web3-gradient"
-        />
-      </section>
+      //{" "}
+      {/* <section className="w-full md:w-auto flex justify-center md:justify-start  bg-hero  bg-no-repeat"></section> */}
+      <Image
+        src="/images/herosec.svg"
+        alt="hero img"
+        height={400}
+        width={500}
+        className="max-w-full h-auto bg-web3-gradient"
+      />
     </div>
   );
 };

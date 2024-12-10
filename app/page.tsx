@@ -5,7 +5,6 @@ import MobileNav from "@/components/MobileNav";
 export default function Home() {
   return (
     <div className=" ">
-      <MobileNav />
       <Hero />
       <About />
     </div>
