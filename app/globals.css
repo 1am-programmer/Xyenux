@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.about {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 3px;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background-color: #9b59b6;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
