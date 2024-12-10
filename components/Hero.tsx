@@ -35,7 +35,7 @@ const Hero = () => {
           Get Started
         </Link>
       </section>
-      //{" "}
+
       {/* <section className="w-full md:w-auto flex justify-center md:justify-start  bg-hero  bg-no-repeat"></section> */}
       <Image
         src="/images/herosec.svg"

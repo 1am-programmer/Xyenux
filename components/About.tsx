@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="about-section bg-black py-5 flex flex-col justify-center gap-8 md:px-10 px-5"
+      className="about-section bg-black py-10 flex flex-col justify-center gap-8 md:px-10 px-5"
     >
       <h1 className="text-2xl md:text-3xl text-center py-5 font-bold about">
         About Us
