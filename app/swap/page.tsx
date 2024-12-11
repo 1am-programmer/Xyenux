@@ -16,22 +16,23 @@ const page = () => {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gray-100 p-4">
-      <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-lg">
-        <h1 className="md:text-3xl text-center mb-6 text-[#9b59b6] text-2xl font-bold">
+    <div className="min-h-screen flex justify-center items-center bg-web3-gradient p-4">
+      <div className="bg-white rounded-xl shadow-lg p-6 w-full max-w-lg">
+        {/* Adjusted h1 styling */}
+        <h1 className="text-xl sm:text-3xl text-center mb-6 text-gray-500 font-bold">
           Swap Xyenux to any ERC20 network
         </h1>
 
         <div className="space-y-6">
           {/* From Currency Section */}
           <div className="flex flex-col sm:flex-row justify-between items-center sm:space-x-4 sm:space-y-0 space-y-4">
-            <div className="flex w-full sm:w-2/3 border border-gray-300 rounded-md overflow-hidden">
+            <div className="flex w-full sm:w-full border border-gray-300 rounded-xl overflow-hidden">
               <input
-                type="number"
+                min={0}
                 value={fromAmount}
                 onChange={(e) => setFromAmount(e.target.value)}
-                className="w-full p-3 border-none text-lg"
-                placeholder={`Amount in ${
+                className="w-full p-3 border-none text-lg text-black appearance-none -moz-appearance-none -webkit-appearance-none focus:outline-none"
+                placeholder={`0.00 ${
                   fromCurrency === "XYN"
                     ? "XYN"
                     : fromCurrency?.slice(0, 3).toUpperCase()
@@ -40,7 +41,7 @@ const page = () => {
               <select
                 value={fromCurrency}
                 onChange={(e) => setFromCurrency(e.target.value)}
-                className="w-1/3 p-3 border-none text-lg"
+                className="w-full sm:w-1/3 p-3 text-lg bg-red-600 text-white border-none rounded-r-xl focus:outline-none"
               >
                 <option value="XYN">XYN</option>
                 <option value="ETH">ETH</option>
@@ -63,13 +64,13 @@ const page = () => {
 
           {/* To Currency Section */}
           <div className="flex flex-col sm:flex-row justify-between items-center sm:space-x-4 sm:space-y-0 space-y-4">
-            <div className="flex w-full sm:w-2/3 border border-gray-300 rounded-md overflow-hidden">
+            <div className="flex w-full sm:w-full border border-gray-300 rounded-xl overflow-hidden">
               <input
-                type="number"
+                min={0}
                 value={toAmount}
                 onChange={(e) => setToAmount(e.target.value)}
-                className="w-full p-3 border-none text-lg"
-                placeholder={`Amount in ${
+                className="w-full p-3 border-none text-lg text-black appearance-none -moz-appearance-none -webkit-appearance-none focus:outline-none"
+                placeholder={`0.00 ${
                   toCurrency === "XYN"
                     ? "XYN"
                     : toCurrency?.slice(0, 3).toUpperCase()
@@ -78,7 +79,7 @@ const page = () => {
               <select
                 value={toCurrency}
                 onChange={(e) => setToCurrency(e.target.value)}
-                className="w-1/3 p-3 border-none text-lg"
+                className="w-full sm:w-1/3 p-3 text-lg bg-red-600 text-white border-none rounded-r-xl focus:outline-none"
               >
                 <option value="ETH">ETH</option>
                 <option value="USDT">USDT</option>
