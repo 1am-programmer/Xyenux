@@ -45,7 +45,7 @@ const navLinks = [
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center h-16 px-6">
+    <div className="flex justify-between items-center h-16 py-1 px-4 md:px-8">
       <section className="flex items-center">
         <Image
           src="/images/logo.svg"

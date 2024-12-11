@@ -1,4 +1,3 @@
-// app/layout.tsx or app/RootLayout.tsx (depending on your setup)
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Metadata } from "next";
@@ -32,13 +31,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-web3-gradient text-gray-300 px-4 py-8 max-w-7xl mx-auto`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-web3-gradient text-gray-300 w-full`}
       >
         <Header />
 
-        <main className="px-4 py-8 max-w-7xl mx-auto flex flex-col justify-center gap-16 min-h-screen">
+        <div className="flex flex-col justify-center gap-16 min-h-screen px-6 md:px-16 lg:px-24">
           {children}
-        </main>
+        </div>
 
         <Footer />
       </body>

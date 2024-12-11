@@ -16,15 +16,13 @@ const page = () => {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-web3-gradient p-4">
+    <div className="min-h-screen flex justify-center items-center bg-gray-100 p-4">
       <div className="bg-white rounded-xl shadow-lg p-6 w-full max-w-lg">
-        {/* Adjusted h1 styling */}
         <h1 className="text-xl sm:text-3xl text-center mb-6 text-gray-500 font-bold">
           Swap Xyenux to any ERC20 network
         </h1>
 
         <div className="space-y-6">
-          {/* From Currency Section */}
           <div className="flex flex-col sm:flex-row justify-between items-center sm:space-x-4 sm:space-y-0 space-y-4">
             <div className="flex w-full sm:w-full border border-gray-300 rounded-xl overflow-hidden">
               <input
@@ -52,7 +50,6 @@ const page = () => {
             </div>
           </div>
 
-          {/* Swap Icon (Arrows) */}
           <div className="flex justify-center">
             <button
               onClick={handleSwap}
@@ -62,7 +59,6 @@ const page = () => {
             </button>
           </div>
 
-          {/* To Currency Section */}
           <div className="flex flex-col sm:flex-row justify-between items-center sm:space-x-4 sm:space-y-0 space-y-4">
             <div className="flex w-full sm:w-full border border-gray-300 rounded-xl overflow-hidden">
               <input
