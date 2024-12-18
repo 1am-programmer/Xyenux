@@ -1,7 +1,12 @@
 import React from "react";
+import Route from "./Route";
 
 const page = () => {
-  return <div>page</div>;
+  return (
+    <div>
+      <Route />
+    </div>
+  );
 };
 
 export default page;

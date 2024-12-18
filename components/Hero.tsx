@@ -6,7 +6,7 @@ import { Orbitron } from "next/font/google";
 const orbitron = Orbitron({
   weight: ["400", "500", "700"],
   subsets: ["latin"],
-});
+});                                                                 
 const Hero = () => {
   return (
     <div
