@@ -50,9 +50,9 @@ const Route: React.FC = () => {
             >
               Xyenux
             </h1>
-            <div className="text-2xl font-bold mx-5 hidden sm:flex">
+            {/* <div className="text-2xl font-bold mx-5 hidden sm:flex">
               NFT Marketplace
-            </div>
+            </div> */}
           </section>
 
           <nav>
@@ -87,6 +87,23 @@ const Route: React.FC = () => {
             Explore NFTs
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            {/* Increased NFT Card count to 8 */}
+            <NFTCard
+              onBuyClick={handleBuyClick}
+              onSellClick={handleSellClick}
+            />
+            <NFTCard
+              onBuyClick={handleBuyClick}
+              onSellClick={handleSellClick}
+            />
+            <NFTCard
+              onBuyClick={handleBuyClick}
+              onSellClick={handleSellClick}
+            />
+            <NFTCard
+              onBuyClick={handleBuyClick}
+              onSellClick={handleSellClick}
+            />
             <NFTCard
               onBuyClick={handleBuyClick}
               onSellClick={handleSellClick}
