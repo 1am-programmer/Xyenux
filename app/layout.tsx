@@ -33,7 +33,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-web3-gradient text-gray-300 w-full`}
       >
-        <Header />
+        {/* <Header /> */}
 
         <div className="flex flex-col justify-center gap-16 min-h-screen px-6 md:px-16 lg:px-24">
           {children}
